@@ -50,7 +50,7 @@ resource "azurerm_linux_web_app" "example" {
 
   # MSSQL Server
   resource "azurerm_mssql_server" "example" {
-    name                         = "workshop-mssql-server"
+  name                         = "workshop-mssql-server-neu"
     resource_group_name          = "rg-09"
   location                     = "northeurope"
     version                      = "12.0"
@@ -62,7 +62,7 @@ resource "azurerm_linux_web_app" "example" {
   # MSSQL Database
   resource "azurerm_mssql_database" "example" {
     name               = "workshopdb"
-    server_id          = azurerm_mssql_server.example.id
+  server_id          = azurerm_mssql_server.example.id
     sku_name           = "S0"
     collation          = "SQL_Latin1_General_CP1_CI_AS"
     max_size_gb        = 5
