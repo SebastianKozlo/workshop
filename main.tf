@@ -37,7 +37,7 @@ resource "azurerm_linux_web_app" "example" {
 }
 
   resource "azurerm_storage_account" "example_storage" {
-    name                     = "storagea23123234"
+    name                     = "storagea23123234xyz12"
     resource_group_name      = "rg-09"
     location                 = "westeurope"
     account_tier             = "Standard"
