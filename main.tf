@@ -39,7 +39,7 @@ resource "azurerm_linux_web_app" "example" {
   resource "azurerm_storage_account" "example_storage" {
     name                     = "storagea23123234xyz12"
     resource_group_name      = "rg-09"
-    location                 = "westeurope"
+  location                 = "northeurope"
     account_tier             = "Standard"
     account_replication_type = "GRS"
 
@@ -52,7 +52,7 @@ resource "azurerm_linux_web_app" "example" {
   resource "azurerm_mssql_server" "example" {
     name                         = "workshop-mssql-server"
     resource_group_name          = "rg-09"
-    location                     = "westeurope"
+  location                     = "northeurope"
     version                      = "12.0"
     administrator_login          = "sqladminuser"
     administrator_login_password = "P@ssw0rd1234!"
